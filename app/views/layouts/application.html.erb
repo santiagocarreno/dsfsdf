@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>VowNu</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- solicitudes de CSS y JS de Bootstrap Parallax-->
+  <meta charset="utf-8">
+  <title>Twitter Bootstrap Parallax Tutorial</title>
+  <meta name="description" content="Twitter Bootstrap Parallax Tutorial with HTML5 / CSS3 / JavaScript">
+  <meta name="author" content="Untame.net">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <script src="js/jquery-1.6.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/init.js"></script>
+ <!-- --> 
+
+ <!-- solicitudes de CSS y JS de Bootstrap Modals-->
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/bootstrap-modal.css" rel="stylesheet" />
+
+  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap-modalmanager.js"></script>
+  <script src="js/bootstrap-modal.js"></script>
+<!-- -->  
+  
+
+
+</head>
+
+<%= yield %>
+
+<body>
+
+
+<!-- Alternativa al menu-bar tradicional -->
+
+    <div class="navbar navbar navbar-fixed-top">
+          <div id="menuprincipal">
+            <div class="container">
+
+              <div class="row">  
+
+                <div class="col-lg-6 col-md-6" id="primeracol">    
+                  <!--<a class="brand" href="#">Parallax Demo</a>-->
+                  <ul class="nav">
+                    <li><a class="blanco" id="home_button" href="/">Home</a></li>
+                    <li><a class="blanco" href="#" id="fundaciones">Fundaciones</a></li>
+                    <li><a class="blanco" href="http://bootsnipp.com/snippets/featured/nav-account-manager" id="donantes">Donantes</a></li>
+                    <li><a class="blanco" href="#" target="_blank" id="nosotros" >Nosotros</a></li>
+                  </ul>
+                </div>  
+                  <!-- fin Classic Parallax -->
+
+                <div class="col-lg-2 col-md-2">
+                </div>  
+
+                <div class="col-lg-4 col-md-4" id="segundacol">    
+                <!-- Extension a Parallax -->
+                  <% if user_signed_in? %>
+                      <ul class="nav navbar-nav navbar-right">
+                          <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                  <span class="glyphicon glyphicon-user"></span> 
+                                  <strong><%= @user.username%></strong>
+                                  <span class="glyphicon glyphicon-chevron-down"></span>
+                              </a>
+                              <ul class="dropdown-menu">
+                                  <li>
+                                      <div class="navbar-login">
+                                          <div class="row">
+                                              <div class="col-lg-4">
+                                                  <p class="text-center">
+                                                      <span class="glyphicon glyphicon-user icon-size"></span>
+                                                  </p>
+                                              </div>
+                                              <div class="col-lg-8">
+                                                  <p class="text-left"><strong><%= @user.username%></strong></p>
+                                                  <p class="text-left small"><%= @user.email%></p>
+                                                  <p class="text-left">
+                                                      <%= link_to 'Actualizar datos', complete_profile_path ,:method => :patch , :class => "btn btn-primary btn-block"%>
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="divider"></li>
+                                  <li>
+                                      <div class="navbar-login navbar-login-session">
+                                          <div class="row">
+                                              <div class="col-lg-12">
+                                                  <p>
+                                                      
+                                                      <%= link_to 'Cerrar Sesión', destroy_user_session_path, :method => :delete , :class => "btn btn-danger btn-block" %>
+
+                                                  </p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+
+                  <% else %>
+                       <ul class="nav navbar-nav navbar-right">
+                          
+
+                          <li id="registrate">
+                              <!--<%= link_to "Regístrate", new_user_registration_path %>-->
+                              <%= link_to 'registrate', "#registrate", data: {toggle: "modal", target: "#modal"} %>    
+                          </li>
+                          <li id="ingresa">
+                              <%= link_to "Ingresa", new_user_session_path %>
+                          </li>
+
+                       </ul>
+                  <% end %>
+                  <!--Fin de lista, no fin del navbar -->   
+                </div>
+              </div>  
+            </div>
+          </div>
+    </div>
+    <!-- Fin del navbar -->
+
+
+
+<!--</div>-->
+</body>
+</html>

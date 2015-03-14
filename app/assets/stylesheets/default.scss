@@ -1,0 +1,332 @@
+#grad{
+
+  background: -webkit-linear-gradient(left,rgba(0,90,160,0),rgba(1,157,206,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(0,90,160,0),rgba(1,157,206,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(0,90,160,0),rgba(1,157,206,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(0,90,160,0), rgba(1,157,206,1)); /*Standard*/
+  position: relative;
+  /*background-color: rgb(0,145,210);*/
+  height: 900px;
+  
+} 
+
+@media (max-width: 100px){
+  #grad{
+    height: 200px;
+  }
+}
+
+#primeracol{
+
+position:absolute;
+left: 0%;
+
+}
+
+#segundacol{
+
+position:absolute;
+margin: auto;
+right: 0%;
+
+}
+
+#vowlogo{
+    position: relative;
+    margin: auto;
+    top: 280px;
+    left: 25%;
+    
+}
+
+#botonfundacion{
+
+  font-size: 280%;
+  position: absolute;
+  margin: auto;
+  height: 15%; 
+  top: 42.8%;
+  left: 17.5%;
+   
+
+}
+
+#botondonante{
+
+  
+  font-size: 280%;
+  position: absolute;
+  margin: auto;
+  height: 15%;
+  top: 42.8%;
+  left: 68%;
+  
+
+}
+
+
+#fotousuarios{
+
+    position: absolute;
+    width: 70%;
+    margin: auto;
+    top: 23%;
+    left: 15%;
+
+}
+
+#logito2{
+
+    position: absolute;
+    margin: auto;
+    top: 2%;
+    left: 43%;
+
+}
+
+#logito3{
+
+    position: absolute;
+    margin: auto;
+    top: 2%;
+    left: 43%;
+
+}
+
+#logito4{
+
+    position: absolute;
+    margin: auto;
+    top: 2%;
+    left: 43%;
+
+}
+
+#videito1{
+
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: 43%;
+    align: center;
+    
+
+}
+
+#barranegra{
+
+  position: absolute;
+  margin: auto;
+  /*height: 10%;
+  width: 20%;*/
+  top: 50%;
+  left: 0%; 
+  height: 50%;
+}
+
+#frases{
+
+    position: absolute;
+    width: 70%;
+    margin: auto;
+    top: 23%;
+    left: 15%;
+
+}
+
+#cuadroblanco{
+
+    position: absolute;
+    width: 55%;
+    margin: auto;
+    top: 60%;
+    left: 1%;
+
+}
+
+#botonenviar{
+
+    position: absolute;
+    width: 30%;
+    margin: auto;
+    top: 87.8%;
+    left: 17.55%;
+
+}
+
+#home_button{
+      font-family: 'Montserrat', sans-serif;
+      font-size:150%;
+      color: #FFFFFF; 
+}
+#fundaciones{
+      font-family: 'Montserrat', sans-serif;
+      font-size:150%;
+      color: #FFFFFF; 
+
+}
+
+#donantes{
+
+      font-family: 'Montserrat', sans-serif;
+      font-size:150%;
+      color: #FFFFFF;
+
+}
+
+#nosotros{
+
+      font-family: 'Montserrat', sans-serif;
+      font-size:150%;
+      color: #FFFFFF;
+
+}
+
+#registrate a{
+
+      font-family: 'Montserrat', sans-serif;
+      font-size:150%;
+      color: #FFFFFF;
+
+}
+
+#ingresa a{
+
+      font-family: 'Montserrat', sans-serif;
+      font-size:150%;
+      color: #FFFFFF;
+
+}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+}
+
+.navbar li { color: #000 } 
+
+
+#post {
+
+background-image: url(http://s6.postimg.org/63zf2nzqp/fondogeneral.jpg);
+background-size: 2100px;
+
+}
+
+
+
+/*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The New Guys in Town */
+
+
+#intro1 { 
+
+      background: url('fondoprincipal.jpg') 50% 0 fixed; 
+      height: auto;  
+      margin: 0 auto; 
+      height: 1000px;
+      width: 100%; 
+      position: relative; 
+      box-shadow: 0 0 50px rgba(0,0,0,0.8);
+      padding: 100px 0;
+
+    }
+
+#home1 { 
+
+      background: url('slidevow2.jpg') 50% 0 fixed; 
+      height: auto;  
+      margin: 0 auto;
+      height: 1000px;
+      width: 100%; 
+      position: relative; 
+      box-shadow: 0 0 50px rgba(0,0,0,0.8);
+      padding: 100px 0;
+
+    }
+
+#about1 { 
+
+      background: url('gradient-background.jpg') 50% 0 fixed; 
+      height: auto;  
+      margin: 0 auto;
+      height: 1000px; 
+      width: 100%; 
+      position: relative; 
+      box-shadow: 0 0 50px rgba(0,0,0,0.8);
+      padding: 100px 0;
+
+    }
+
+#ohyeah { 
+
+      background: url('fondoazul4.jpg') 50% 0 fixed; 
+      height: auto;  
+      margin: 0 auto; 
+      height: 1000px;
+      width: 100%; 
+      position: relative; 
+      box-shadow: 0 0 50px rgba(0,0,0,0.8);
+      padding: 100px 0;
+
+    }
+
+
+/* Non-essential demo stuff */
+
+.hero-unit {
+
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+    }
+
+.media-object { width: 64px; height: 64px; padding-bottom: 30px }
+
+/* The end of the New Guys */
+
+
+
+
+
+
+
